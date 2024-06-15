@@ -1,4 +1,4 @@
-package tp.msk.service;
+package tp.msk.service.v2;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -6,9 +6,9 @@ import tp.msk.web.model.BeerDTO;
 
 import java.util.UUID;
 
-@Slf4j
 @Service
-public class BeerServiceImpl implements BeerService {
+@Slf4j
+public class BeerServiceV2Impl implements BeerServiceV2 {
     @Override
     public BeerDTO getBeerById(UUID beerId) {
         return BeerDTO.builder()
@@ -30,7 +30,7 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public void updateBeer(UUID beerId, BeerDTO beerDTO) {
         //todo - impl beer update
-        log.debug("Updating......");
+        log.debug("Update....");
     }
 
     @Override

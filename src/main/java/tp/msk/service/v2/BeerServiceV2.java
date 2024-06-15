@@ -1,12 +1,10 @@
-package tp.msk.service;
+package tp.msk.service.v2;
 
-import org.springframework.stereotype.Service;
 import tp.msk.web.model.BeerDTO;
 
 import java.util.UUID;
 
-
-public interface BeerService {
+public interface BeerServiceV2 {
     BeerDTO getBeerById(UUID beerId);
     BeerDTO saveNewBeer(BeerDTO beerDTO);
     void updateBeer(UUID beerId, BeerDTO beerDTO);
